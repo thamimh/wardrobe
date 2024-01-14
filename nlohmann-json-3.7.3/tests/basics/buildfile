@@ -1,0 +1,10 @@
+import libs = nlohmann-json%lib{json}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
+
+switch $cxx.id
+{
+    case 'gcc' | 'clang'
+        cxx.coptions += -Wno-unused-comparison -Wno-unused-result # Ignore warnings for now.
+}
+

@@ -1,0 +1,6 @@
+$out_root/
+{
+  include json/
+}
+
+export $out_root/json/$import.target

@@ -1,0 +1,11 @@
+: 1
+name: nlohmann-json
+version: 3.7.3
+summary: "JSON for Modern C++"
+license: MIT
+description-file: README.md
+url: https://nlohmann.github.io/json/
+package-url: https://github.com/build2-packaging/nlohmann-json
+package-email: mjklaim@gmail.com
+depends: * build2 >= 0.12.0
+depends: * bpkg >= 0.12.0
